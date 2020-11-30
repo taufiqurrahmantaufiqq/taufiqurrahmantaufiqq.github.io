@@ -1,0 +1,166 @@
+/*Font*/
+@font-face {
+    font-family: 'grand_hotelregular';
+    src: url('../font/grandhotel-regular-webfont.woff2') format('woff2'),
+         url('../font/grandhotel-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Style Utama*/
+
+body {
+	background-image: url(../img/bg.png);
+}
+
+.container {
+	width: 300px;
+	background: rgba(0, 0, 0, 0.5);
+	margin: auto;
+
+	margin-top: 40px;
+	padding: 50px;
+
+	
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 0px 0px 20px 10px black;
+
+
+}
+
+
+.avatar {
+       font-size: 30px ;
+       background: orange;
+       width: 80px;
+       height: 80px;
+       position: absolute;
+       line-height: 50px;
+       left: 50%;
+       top: 170px;
+       transform: translate(-50%, -50%);
+       text-align: center;
+       border-radius: 50%;
+     }
+
+.avatar img {
+	width: 50px;
+	height: 50px;
+	margin-top: 10px;
+	margin-left: 8px;
+
+}
+
+h1 {
+	font-size: 80px;
+	margin: 20px 0;
+
+	text-align: center;
+	text-shadow: 5px 5px 0px orange;
+	font-weight: bold;
+	font-family: 'grand_hotelregular';
+}
+
+h2 {
+	font-size: 40px;
+	margin: -20px;
+	margin-top: -5px;
+	text-align: center;
+	text-shadow: 2px 2px 0px orange;
+	
+	font-family: 'grand_hotelregular';
+}
+
+
+.garis {
+	font-size: 40px;
+	margin: -20px;
+	text-align: center;
+	text-shadow: 2px 2px 0px orange;
+	
+	font-family: 'grand_hotelregular';
+}
+
+.garis2 {
+	font-size: 40px;
+	margin: auto;
+	margin-top: -50px;
+	text-align: center;
+	text-shadow: 2px 2px 0px orange;
+	font-family: 'grand_hotelregular';
+}
+
+#username {
+	margin: auto;
+	margin-left: -40px;
+	margin-top: 20px;
+	width: 220px;
+	height: 40px;
+	border-radius: 30px;
+	text-align: center;
+	stroke: 20px orange;
+
+}
+
+#password {
+	margin: auto;
+	margin-left: -39px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	width: 220px;
+	height: 40px;
+	border-radius: 30px;
+	text-align: center;
+	stroke: 20px orange;
+}
+
+
+
+.login {
+	margin: auto;
+	margin-left: 65px;
+	margin-top: 20px;
+	width: 100px;
+	height: 35px;
+	border-radius: 30px;
+	text-align: center;
+	stroke: 20px orange;
+	display: block;
+}
+
+.login:hover {
+	background-color: orange;
+}
+
+.labelrmbr {
+	display: inline-block;
+	margin: auto;
+	margin-left: -20px;
+	color: white;
+}
+
+.remember:hover {
+	background-color: orange;
+}
+
+.registrasi {
+       color: white;
+       font-size: 18px;
+       font-style: italic;
+       text-decoration: none;
+       margin: auto;
+       margin-left: -140px;
+     }
+.registrasi:hover {
+     text-decoration: underline;
+     color: orange;
+     }
+
+.pesansalah {
+	display: none;
+}
+
+
+
+

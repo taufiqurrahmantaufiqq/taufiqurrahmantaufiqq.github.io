@@ -1,0 +1,45 @@
+.slider h3, .slider h5, .clients h3 {
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.parallax-container {
+	height: 20%;
+}
+
+.parallax img {
+	filter: grayscale(1);
+	opacity: 0.5 !important; 
+}
+
+/*.client img {
+	max-width: 150pxl
+	filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.8));
+}*/
+
+section, footer {
+	padding: 20px 0;
+}
+
+/*
+
+.clearHeader{
+height: 200px; 
+background-color: rgba(107,107,107,0.66);
+position: fixed;
+top:200;
+width: 100%;
+transition:ease all 1s;
+-webkit-transition:ease all 1s;
+-moz-transition:ease all 1s;
+-o-transition:ease all 1s;
+}
+
+.darkHeader {
+  background-color:#333;
+  height: 100px;
+}
+
+.wrapper {
+height:500px;
+}
+*/

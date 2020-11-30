@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tes tes</title>
+  <link rel="stylesheet" type="text/css" href="2.css">
+  <style type="text/css">
+    
+
+// Colors
+$navbar-white: #fafafa;
+$navbar-black: #131313;
+$navbar-active-color: #fafafa;
+$navbar-bg-active-color: #ff9900;
+$bg-light-blue: #00c6ff;
+$bg-dark-blue: #0072ff;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+.jumbo {
+  padding-top: 150px;
+  height: 200vh;
+}
+// Navigation Bar
+.navbar {
+  a {
+    color: $navbar-black;
+  }
+  li {
+    &.active {
+      background: $navbar-bg-active-color;
+      a {
+        color: $navbar-active-color;
+      }
+    }
+  }
+  .navbar-toggle {
+    .icon-bar {
+      background: $navbar-black;
+    }
+  }
+}
+
+// On Shrink
+.shrink {
+  .navbar {
+    color: $navbar-white;
+    background: $bg-light-blue;
+    background: -webkit-linear-gradient(55deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+    background: linear-gradient(35deg,$bg-light-blue 10%,$bg-dark-blue 90%);
+  }
+  .navbar-toggle {
+    .icon-bar {
+      background: $navbar-white;
+    }
+  }
+}
+
+View Compiled
+
+
+  </style>
+</head>
+<body>
+
+
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="https://reezhdesign.com">ReeZh Design</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container jumbo">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="#" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+
+    </div> <!-- /container -->
+<div class="container">
+  <p>See full live action implemented in our site, <a href="https://reezhdesign.com" rel="author">ReeZh Design</a></p>
+</div>
+
+
+<script type="text/javascript" src="3.js">
+  
+jQuery( document ).ready( function($) {
+  $( window ).scroll( function () {
+    if ( $(document).scrollTop() > 150 ) {
+      // Navigation Bar
+      $('.navbar').removeClass('fadeIn');
+      $('body').addClass('shrink');
+      $('.navbar').addClass('animated fadeInDown');
+    } else {
+      $('.navbar').removeClass('fadeInDown');
+      $('body').removeClass('shrink');
+      $('.navbar').addClass('animated fadeIn');
+    }
+  });
+});
+
+
+</script>
+
+</body>
+</html>
